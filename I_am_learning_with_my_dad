@@ -1,0 +1,1166 @@
+LEARNING PYTHON
+
+VIDEO: 1
+name=input("what is your name")
+print("Hello Mr.",name,"how are you”)
+
+VIDEO: 2 
+ESCAPE CHARACTER
+print("He said that, \"My name is Hamza\”")
+
+HOW TO WRITE IN NEXT LINE
+print("My name is Mashuk \nI am an Engineer \nI am doing MBA \n my son is Hamza”)
+
+VIDEO: 3
+
+VARIABLES
+name="hamza"
+age = "8yrs"
+cls= "4"
+school= "3brd afs"
+
+print(school, "and", age)
+
+IMPORT MATHS
+import math
+name= math.pi
+print(name)
+
+Rule 1: A variable must start with a letter or underscore (_)it cannot start with a number
+Rule 2: A variable cannot have special character (@#$)
+Rule 3: Variable are case sensitive 
+Rule 4: Keyword cannot be used for variables
+
+IMPORT KEYWORD
+import keyword
+print(keyword.kwlist)
+
+VIDEO: 4
+
+TRUTLE DRAWING
+import turtle
+t=turtle.Pen()
+for x in range(100):
+    t.forward(x)
+    t.left(40)
+
+VIDEO: 5
+
+TRUTLE DRAWING COLOURING: Single colour
+import turtle
+t= turtle.Pen()
+t.pencolor("green")
+for x in range (100):
+    t.forward(x)
+    t.right(50)
+
+TRUTLE DRAWING COLOURING: Multiple color
+import turtle
+t= turtle.Pen()
+colors= ["green","red","black","pink","blue"]
+for x in range (200):
+    t.pencolor(colors[x%5])
+    t.forward(x)
+    t.right(93)
+
+VIDEO: 6
+
+TRUTLE: CHANGING BACKGROUND COLOUR
+import turtle
+t= turtle.Pen()
+turtle.bgcolor("yellow")
+colors= ["green","red","black","pink","blue"]
+for x in range (200):
+    t.pencolor(colors[x%5])
+    t.forward(x)
+    t.right(93)
+
+VIDEO: 7
+
+TRUTLE: MAKING CIRCLE
+import turtle
+t= turtle.Pen()
+turtle.bgcolor("yellow")
+colors= ["green","red","black","pink","blue"]
+for x in range (200):
+    t.pencolor(colors[x%5])
+    t.circle(x)
+    t.right(93)
+
+
+VIDEO: 8
+
+MAKING EMOJI
+print("\U0001F973")
+
+Link for Emoji code:
+http://unicode.org/emoji/charts/emoji-list.html
+
+
+VIDEO: 9
+
+JUPYTER
+This is useless if you are having Python installed in your computer but if you are not having Python in your system then you can visit the cloud version of Python that is Jupyter because you can use it from Jupiter.
+
+VIDEO: 10
+
+MAKING EMOJI
+print(“\U0001F973")
+
+VIDEO: 11
+
+THANKS NOTE
+my_name= "Mashuk"
+my_age=32
+your_name= input("What is your name?")
+your_age= input("What is your age?")
+print("My name is", my_name, "and I am",my_age,"years old")
+print("your name is",your_name, "and you are",your_age,"years old")
+print("Thanks to visit our store”,your_name)
+
+VIDEO: 12
+
+MATHS
+Addition +
+Subtraction -
+Multiplication *
+Division /
+Power **
+Reminder %
+
+VIDEO: 13
+
+BMI CALCULATOR
+height=eval(input("what is your height in cm"))
+weight=eval(input("what is your weight in kg"))
+BMI=weight/(height/100)**2
+print("Your BMI is=“,BMI)
+
+
+VIDEO: 14
+
+BMI CALCULATOR WITH POPUP WINDOW
+
+import turtle
+height=turtle.numinput("HEIGHT","what is your height in cm")
+weight=turtle.numinput("WEIGHT","what is your weight in kg")
+BMI=weight/(height/100)**2
+print("Your BMI is=",BMI)
+
+
+VIDEO: 15
+
+RESTAURANT BILL
+import turtle
+tea=turtle.numinput("tea","kitna chai piya?")
+biscuit=turtle.numinput("biscuit","Biscuite bhi khaya hai kya?")
+cost_tea=12
+cost_buscuit=5
+bill=tea*cost_tea+biscuit*cost_buscuit
+GST=0.18*bill
+total_bill=bill+GST
+print("Amount Rs.", bill)
+print("GST @18% Rs.", GST)
+print("Total amount with GST”,total_bill)
+
+VIDEO: 16
+
+MATHS PROBLEM (CALCULATOR)
+print("Lets do your maths homework")
+problem= input ("Enter a math problem, orEnter E to Exit:")
+while(problem!="E"):
+    print("Answer to your problem is", eval(problem))
+    problem=input("Enter another math problem, or enter E to Exit”)
+
+VIDEO: 17
+
+PRINTING SAME NAME MULTIPLE TIMES
+
+VERTICAL NAMES:
+name=input("What is your name")
+for x in range(20):
+    print(name)
+
+HORIZONTAL NAMES
+name=input("What is your name")
+for x in range(20):
+    print(name, end="")
+
+VIDEO: 18
+
+DATA TYPE:
+Integer.       : -20,-3,0,6,89
+Floating      : 2.5, 4.89
+Complex number : 1+2j
+Stings: “Hamza”
+Boolean: “True”,”False”
+List: [1, home,78]
+Tuple: (1, home,78)
+Sets: {1, home,78}
+Dictionary: {1: “More”}
+
+
+VIDEO: 19
+
+TO KNOW DATA TYPE:
+x=5
+print(type(x))
+
+x=2.5
+print(type(x))
+
+CONVERT DATA TYPE:
+Integer to floating
+int(2.34)
+
+VIDEO: 20
+
+BASICS OF TURTLE:
+import turtle
+t= turtle.Turtle()
+t.right(90)
+t.forward(100)
+t.left(145)
+t.forward(70)
+t.right(78)
+t.forward(300)
+t.left(48)
+t.backward(400)
+t.goto(30,80)
+t.goto (25,-45)
+t.home()
+
+VIDEO: 21
+
+DRAWING CIRCLE AND DOT WITH TURTLE:
+import turtle
+t= turtle.Turtle()
+t.circle(100)
+t.dot(30)
+
+
+VIDEO: 22
+
+CHANGING SIZE AND COLOR OF PEN IN TURTLE:
+import turtle
+t= turtle.Turtle()
+t.shapesize(10,12,30)
+t.pensize(10)
+t.fillcolor("green")
+t.pencolor(“red")
+
+
+VIDEO: 23
+
+CHANGING SHAPE AND SPEED OF TURTLE:
+import turtle
+t= turtle.Turtle()
+t.shape("arrow")
+t.shape(“circle")
+t.shape("classic")
+t.speed (5)
+
+
+
+VIDEO: 24
+
+DRAWING CIRCLE AND DOT WITH TURTLE:
+import turtle
+t= turtle.Turtle()
+t.shape("arrow")
+t.pencolor("orange")
+t.fillcolor("orange")
+t.speed (1)
+t.pensize(5)
+t.begin_fill()
+t.circle(140)
+t.end_fill()
+
+
+VIDEO: 25
+
+CLONING THE TURTLE:
+import turtle
+t= turtle.Turtle()
+c=t.clone()
+t.color("green")
+c.color("red")
+t.circle(120)
+c.circle(80)
+
+
+
+VIDEO: 26
+
+CHOICE BASED DRAWING, TAKING INPUT FROM USER
+import turtle
+t= turtle.Turtle()
+a=turtle.textinput("Please choose","Would you like me to draw a circle Type Yes or No")
+if a == "Yes":
+    t.circle(90)
+elif a== "No":
+    print("Okay, No problem tu khud hi bana lena")
+else:
+    print ("Galat entry hai, Solta hai kya?")
+
+
+VIDEO: 27
+
+DRAWING POLYGON WITH TURTLE:
+import turtle
+t= turtle.Turtle()
+t.pencolor("green")
+t.color("black")
+t.fillcolor("red")
+number_side=8
+side_length= 100
+angle=360.0/number_side
+
+for i in range(number_side):
+    t.forward(side_length)
+    t.right(angle)
+turtle.done()
+
+VIDEO: 28
+
+SHORTCUT SETTING:
+For MAC: Go to IDLE- Preferences- Keys- History Previous- Get new key for selection- Choose your key- press OK
+For Windows: Go to Options- configure IDLE- Keys- History Previous-Get new key for selection- Choose your key- press OK
+
+COMMENT AND UNCOMMENT
+Convert to comment: Select command and press Alt+3
+Convert to uncomment: Select command and press Alt+4
+
+VIDEO: 29
+
+MATHEMATICAL EXPRESSIONS
+import math as m
+m.sqrt(64) For square root
+int(m.sqrt(63))
+m.pi To get value of Pi
+m.log(10)
+m.sin(60)
+m.pow(7,2) To get exponential power
+help(“math”) To find all the formula available for maths from python source file.
+
+VIDEO: 30
+
+DATE TIME MODULE: GETTING TODAY, TOMORROW AND YESTERDAY
+import datetime as d
+today=d.date.today()
+print(today)
+
+one_day=d.timedelta(days=1)
+yesterday=today-one_day
+print(yesterday)
+
+tomorrow= today+one_day
+print(tomorrow)
+
+
+VIDEO: 31
+
+DATE TIME MODULE: CHANGING FORMAT OF DATE
+import datetime as d
+today=d.date.today()
+print(today)
+
+#Now changing format 1
+d1=today.strftime("%d %m %Y")
+print(d1)
+
+#Now changing format 2
+d2=today.strftime("%B %d %Y")
+print(d2)
+
+#Now changing format 3
+d3=today.strftime("%b %d %Y")
+print(d3)
+
+#Now changing format 4 (Only day)
+a=d.datetime.now()
+print(a.strftime("%A"))
+
+#Now changing format 5 (Only day number)
+a=d.datetime.now()
+print(a.strftime("%w"))
+
+#Now changing format 6 (week of year (Out of 52))
+a=d.datetime.now()
+print(a.strftime("%W"))
+
+#Now changing format 7 (AM or PM)
+a=d.datetime.now()
+print(a.strftime("%p"))
+
+#Now changing format 8 (Complete date in 24 hr format)
+a=d.datetime.now()
+print(a.strftime("%H: %M: %S"))
+
+
+#Now changing format 9 (Complete date in 12 hr format)
+a=d.datetime.now()
+print(a.strftime("%I: %M: %S  %p"))
+
+
+
+VIDEO: 32
+
+MAKING DIGITAL CLOCK 1:
+#Start time (Clock will start at 06:59:55)
+seconds= 55
+minutes = 59
+hours= 6
+
+import time
+
+while True:
+    print(str (hours).zfill(2)+”:"+str(minutes).zfill(2)+":"+str(seconds).zfill(2))
+#.zfill(2): it defines that there should be two digits even when below 10.
+    seconds=seconds+1
+    time.sleep(1)
+#we want that second should not go to 61…62…63 instead 0 after 60
+    if seconds==60:
+        seconds=0
+        minutes=minutes+1
+    if minutes==60:
+        minutes=0
+        hours=hours+1
+
+
+
+VIDEO: 33
+
+MAKING DIGITAL CLOCK 2 (PERFECTING):
+#Start time
+seconds= 55
+minutes = 59
+hours= 6
+
+import time
+from turtle import*
+setup()
+t1=Turtle()
+while True:
+    t1.clear()
+    t1.write(str (hours).zfill(2)+":"+str(minutes).zfill(2)+":"+str(seconds).zfill(2),font=("arial",35,"italic","bold"))
+    seconds=seconds+1
+    time.sleep(1)
+    if seconds==60:
+        seconds=0
+        minutes=minutes+1
+    if minutes==60:
+        minutes=0
+        hours=hours+1
+
+
+
+
+VIDEO: 34
+
+STRING INDEXING AND STRING SLICING:
+name= "hamza"
+#String Indexing
+print(name[1])
+
+#String Slicing:- Start argument: Stop argument
+print(name[0:3])
+
+
+
+VIDEO: 35
+
+STEP ARGUMENT
+print(“congratulations"[1:2:-1])
+
+
+VIDEO: 36
+
+DRAWING 3D CIRCLE WITH TURTLE
+import turtle
+t= turtle.Pen()
+NumberOfCircle=int(turtle.numinput("Number of circle","How many circle do you want?"))
+for x in range(NumberOfCircle):
+    t.circle(100)
+    t.speed(1000)
+    t.pencolor("red")
+    turtle.bgcolor("yellow")
+    t.left(360/NumberOfCircle)
+
+
+
+VIDEO: 37
+
+CONDITIONAL STATEMENT: IF
+age=input("What is your age?")
+age=int(age)
+if age>=14:
+    print("You are most welcome")
+
+
+
+
+VIDEO: 38
+
+CONDITIONAL STATEMENT: ELIF AND ELSE
+age=input("What is your age?")
+age=int(age)
+if age>14:
+    print("You are most welcome")
+elif age==14:
+    print("BACH GAYA BACHHA")
+else:
+    print("Chal Nikal yaha se")
+
+
+
+VIDEO: 39
+
+WHILE LOOP
+i=1
+while i<=10:
+    print("I am solta",i)
+    i=i+1
+
+
+
+
+VIDEO: 40
+
+FOR LOOP
+
+Type 1
+for x in range (5):
+    print("I am Bolta")
+
+Type 2
+
+y=["hamza", "musab", "solta", "bolta", 10,20]
+for x in y:
+    print(x)
+
+Type 3
+for x in range (5):
+    print(x)
+
+Type 4
+for x in range (1,5):
+    print(x)
+
+Type 5
+for x in range (1,20,2):
+    print(x)
+
+Type 6
+for x in range (20,0, -2):
+    print(x)
+
+Type 7 (Combination of for and if, here multiple of 6 is missing in the result)
+for x in range (30):
+    if x %6!=0:
+        print(x)
+
+
+VIDEO: 41
+
+DOUBT CLEARING ABOUT VIDEO NO 4
+
+
+
+VIDEO: 42
+
+BREAK FUNCTION
+
+If a vending machine has only 4 packets and user ask for >= < 4packets
+available=4
+x=int(input("How many packets do you want?"))
+i=1
+while i<=x:
+    if i>available:
+        print("we are out of stock")
+        break
+    i=i+1
+    print ("packet")
+print("Thanks for your purchase \n Please visit again”)
+
+
+VIDEO: 43
+
+CONTINUE FUNCTION
+
+Use of OR and AND function
+for x in range (1,30):
+    if x %6==0 and x%4==0:
+        continue
+    print(x)
+print("Here we used AND function lets try OR function")
+
+
+for x in range (1,30):
+    if x %6==0 or x%4==0:
+        continue
+    print(x)
+print("hope you understand between OR and AND function \n both divisible by 4 and 6 are ommitted")
+
+
+
+VIDEO: 44
+
+PASS FUNCTION
+
+Difference between continue and pass function
+for x in range (1,10):
+    if x %3==0:
+        print("skip")
+        
+        continue
+    print(x)
+print("Here all the divisible of 3 are replaced by SKIP/n now change CONTINUE with PASS")
+
+print(". space \n. space\n. space\n. space\n. space\n. space")
+
+
+
+for x in range (1,10):
+    if x %3==0:
+        print("skip")
+        
+        pass
+    print(x)
+print("Here here multiple of 3 remains with word SKIP")
+
+
+
+
+
+VIDEO: 45
+
+TEMP CONVERTER 1
+
+Converter calculator: Cel to Far
+celsius=eval(input("Enter temp in celsius"))
+fahrenheit=9/5*celsius+32
+print("The temperature is",fahrenheit,"degree fahrenheit")
+
+
+
+
+VIDEO: 46
+
+TEMP CONVERTER 2
+
+Converter calculator: Far to Cel
+fahrenheit=eval(input("Enter temp in fahrenheit"))
+celsius=5/9*(fahrenheit-32)
+print("The temperature is",celsius,"degree celsius")
+
+
+
+
+VIDEO: 47
+
+USE OF FOR AND ELSE TOGETHER
+
+Only if and else
+nums=[3,4,5,7,8,9,3,4]
+for num in nums:
+    if num%3==0:
+        print(num)
+    else:
+        print("no such number")
+
+Using break function
+nums=[3,4,5,7,8,9,3,4]
+for num in nums:
+    if num%3==0:
+        print(num)
+        break
+    else:
+        print("no such number")
+
+VIDEO: 48
+
+Tips to make Apps and Games
+
+
+
+
+VIDEO: 49
+
+WHAT IS GUI
+
+VIDEO: 50
+
+INTRODUCTION TO TKINTER
+import tkinter as tk
+t=tk.Tk()
+t.title("My first tkinter window")
+t.mainloop()
+
+
+Removing tk. From program
+from tkinter import *
+t=Tk()
+t.title("My first tkinter window")
+t.mainloop()
+
+
+
+VIDEO: 51
+
+GRID IN TKINTER
+
+from tkinter import *
+r=Tk()
+r.title("Making grids")
+
+mylabel1=Label(r,text="Ramesh")
+mylabel2=Label(r,text="Mahesh")
+mylabel3=Label(r,text="Suresh")
+mylabel1.grid(row=0,column=0)
+mylabel2.grid(row=1,column=1)
+mylabel3.grid(row=2,column=2)
+r.mainloop()
+
+
+VIDEO: 52
+
+CLICKABLE BUTTON IN TKINTER
+
+from tkinter import *
+r=Tk()
+r.title("Making BUTTON")
+
+myButton1=Button(r,text="Ramesh",padx=50,pady=50)
+myButton2=Button(r,text="Mahesh",padx=50,pady=50)
+myButton3=Button(r,text="Suresh",padx=50,pady=50)
+myButton1.grid(row=0,column=0)
+myButton2.grid(row=1,column=1)
+myButton3.grid(row=2,column=2)
+r.mainloop()
+
+
+VIDEO: 53
+
+GIVE COMMAND TO BUTTON
+
+from tkinter import *
+r=Tk()
+r.title("Making BUTTON")
+def clickAllah():
+    myLabel1=Label(r,text="Allah is the personal name of Almighty.\n He is the greatest")
+    myLabel1.pack()
+def clickArRahman():
+    myLabel2=Label(r,text="Ar Rahman is Most Merciful.")
+    myLabel2.pack()
+def clickArRahim():
+    myLabel3=Label(r,text="Ar Rahim is always merciful whose mercy never fade.")
+    myLabel3.pack()
+
+myButton1=Button(r,text="Allah",padx=50,pady=50, command=clickAllah)
+myButton1.pack()
+myButton2=Button(r,text="ArRahman",padx=50,pady=50, command=clickArRahman)
+myButton2.pack()
+myButton3=Button(r,text="ArRahim",padx=50,pady=50, command=clickArRahim)
+myButton3.pack()
+
+r.mainloop()
+
+
+
+
+
+
+
+
+
+VIDEO: 54
+
+CHANGING COLOR OF BUTTON AND TEXT
+
+
+from tkinter import *
+r=Tk()
+r.title("Making BUTTON")
+def clickAllah():
+    myLabel1=Label(r,text="Allah is the personal name of Almighty.\n He is the greatest")
+    myLabel1.pack()
+def clickArRahman():
+    myLabel2=Label(r,text="Ar Rahman is Most Merciful.")
+    myLabel2.pack()
+def clickArRahim():
+    myLabel3=Label(r,text="Ar Rahim is always merciful whose mercy never fade.")
+    myLabel3.pack()
+
+myButton1=Button(r,text="Allah",padx=50,pady=50,fg="green",bg="red", command=clickAllah)
+myButton1.pack()
+myButton2=Button(r,text="ArRahman",padx=50,pady=50, fg="green",bg="red", command=clickArRahman)
+myButton2.pack()
+myButton3=Button(r,text="ArRahim",padx=50,pady=50, fg="green",bg="red", command=clickArRahim)
+myButton3.pack()
+
+r.mainloop()
+
+DUE TO SOME UNKNOWN REASON MY BACKGROUND (BG) COLOR IS NOT CHANGING
+
+VIDEO: 55
+
+CHANGE SIZE AND FONT IN TKINTER
+
+from tkinter import *
+import tkinter.font as font
+r=Tk()
+
+myFont=font.Font(family="arial", size=40)
+myButton= Button(r, text="Ramesh", bg="red", fg="Red")
+
+myButton["font"]=myFont
+myButton.pack()
+r.mainloop()
+
+
+
+
+
+VIDEO: 56
+
+CHECK(TICK) BUTTON IN TKINTER
+
+from tkinter import *
+r=Tk()
+r.title("Attendence")
+var1=BooleanVar()
+Checkbutton(r, text= "Solta", variable=var1).grid(row=0,column=0)
+var2=BooleanVar()
+Checkbutton(r, text= "Bolta", variable=var2).grid(row=1,column=0)
+r.mainloop()
+
+
+VIDEO: 57
+
+TEXT INPUT BUTTON IN TKINTER
+
+from tkinter import *
+r=Tk()
+r.title("Personal Details")
+
+
+Label(r,text="First Name").grid(row=0, column=0)
+Label(r,text="Last Name").grid(row=1, column=0)
+
+
+entry1=Entry(r)
+entry2=Entry(r)
+entry1.grid(row=0, column=1)
+entry2.grid(row=1, column=1)
+
+r.mainloop()
+
+
+
+VIDEO: 58
+
+SIZE AND COLOR OF FRAME IN TKINTER
+
+from tkinter import *
+
+r=Tk()
+frame=Frame (r,width=800, height=450, background="red")
+frame.pack()
+r.mainloop()
+
+
+
+
+VIDEO: 59
+
+MAKING ARC AND CANVAS IN TKINTER
+
+from tkinter import *
+
+r=Tk()
+canvas=Canvas (r,width=800, height=450, background="red")
+coord=500,360,70,50
+arc=canvas.create_arc(coord, start=0, extent=150, fill= "yellow")
+
+canvas.pack()
+r.mainloop()
+
+
+
+
+
+VIDEO: 60
+
+HOW TO INSTALL PIP
+
+
+
+
+
+
+VIDEO: 61
+
+HOW TO INSTALL PYGAME
+
+
+
+
+
+
+VIDEO: 62
+
+PYGAME MAKING RECTANGLE
+import pygame
+pygame.init()
+
+r=pygame.display.set_mode((800,450))
+pygame.display.set_caption("My first game")
+x=50
+y=50
+width=30
+height=20
+vel=5
+
+run=True
+while run:
+    pygame.time.delay (100)
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            run=False
+    pygame.draw.rect(r,(0,255,0),(x,y,width,height))
+    pygame.display.update()
+pygame.quit()
+
+    
+
+
+
+
+VIDEO: 63
+
+MOVING OBJECT USING NAVIGATION KEY
+
+import pygame
+pygame.init()
+
+r=pygame.display.set_mode((800,450))
+pygame.display.set_caption("My first game")
+x=50
+y=50
+width=30
+height=20
+vel=5
+
+run=True
+while run:
+    pygame.time.delay (100)
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            run=False
+    keys= pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        x -=vel
+    if keys[pygame.K_RIGHT]:
+        x += vel
+
+    if keys[pygame.K_UP]:
+        y -=vel
+    if keys[pygame.K_DOWN]:
+        y +=vel
+    r.fill((110,10,10))
+    pygame.draw.rect(r,(0,255,0),(x,y,width,height))
+    pygame.display.update()
+pygame.quit()
+
+
+
+
+VIDEO: 64
+
+RESTRICTING BOUNDRY
+
+import pygame
+pygame.init()
+
+r=pygame.display.set_mode((800,450))
+pygame.display.set_caption("My first game")
+x=50
+y=50
+width=30
+height=20
+vel=10
+
+run=True
+while run:
+    pygame.time.delay (100)
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            run=False
+    keys= pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and x > vel:
+        x -=vel
+    if keys[pygame.K_RIGHT] and x < 800-width-vel:
+        x += vel
+
+    if keys[pygame.K_UP] and y > vel:
+        y -=vel
+    if keys[pygame.K_DOWN] and y < 450-height-vel:
+        y +=vel
+    r.fill((110,10,10))
+    pygame.draw.rect(r,(0,255,0),(x,y,width,height))
+    pygame.display.update()
+pygame.quit()
+
+
+
+VIDEO: 65
+
+JUMPING CHARACTER
+
+import pygame
+pygame.init()
+
+r=pygame.display.set_mode((800,450))
+pygame.display.set_caption("My first game")
+x=50
+y=50
+width=30
+height=20
+vel=10
+
+jump=False
+jump_count=10
+
+run=True
+while run:
+    pygame.time.delay (100)
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            run=False
+    keys= pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and x > vel:
+        x -=vel
+    if keys[pygame.K_RIGHT] and x < 800-width-vel:
+        x += vel
+    if not(jump):
+        
+        if keys[pygame.K_UP] and y > vel:
+            y -=vel
+        if keys[pygame.K_DOWN] and y < 450-height-vel:
+            y +=vel
+        if keys[pygame.K_SPACE]:
+            jump=True
+    else:
+        if jump_count>= -10:
+            negative=1
+            if jump_count<0:
+                negative=-1
+            y-=(jump_count**2) *0.5 *negative
+            jump_count-=1
+
+        else:
+            jump=False
+            jump_count-10
+
+        
+    r.fill((110,10,10))
+    pygame.draw.rect(r,(0,255,0),(x,y,width,height))
+    pygame.display.update()
+pygame.quit()
+
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
+pygame.init()
+
+r=pygame.display.set_mode((600,450))
+pygame.display.set_caption("My first game")
+x=20
+y=380
+width=30
+height=20
+vel=10
+
+jump=False
+jump_count=10
+
+run=True
+background_image=pygame.image.load(*"photo.jpeg").convert()
+
+while run:
+    pygame.time.delay (100)
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            run=False
+    keys= pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and x > vel:
+        x -=vel
+    if keys[pygame.K_RIGHT] and x < 600-width-vel:
+        x += vel
+    if not(jump):
+        
+        if keys[pygame.K_UP] and y > vel:
+            y -=vel
+        if keys[pygame.K_DOWN] and y < 450-height-vel:
+            y +=vel
+        if keys[pygame.K_SPACE]:
+            jump=True
+    else:
+        if jump_count>= -10:
+            negative=1
+            if jump_count<0:
+                negative=-1
+            y-=(jump_count**2) *0.5 *negative
+            jump_count-=1
+
+        else:
+            jump=False
+            jump_count-10
+
+        
+    r.blit(background_image,[0,0])
+    pygame.draw.rect(r,(0,255,0),(x,y,width,height))
+    pygame.display.update()
+pygame.quit()
+
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
+
+
+
+VIDEO: 66
+
+CHANGING BACKGROUND IMAGE
+
+import pygame
