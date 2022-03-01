@@ -1,3 +1,8 @@
 print("hamza is not a bot")
 print("hamza is a human")
+print("hamza is not a bot")
 print("last warning")
+print("[{---------------}]")
+print("[----]")
+print("[----]")
+print("[----]")
